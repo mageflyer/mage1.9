@@ -1,0 +1,9 @@
+/var/*
+/media/*
+app/etc/local.xml
+local.xml.additional
+local.xml.template
+
+/tmp/*
+
+/logs/*

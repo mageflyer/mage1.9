@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Md_Layout>
+            <version>0.1.0</version>
+        </Md_Layout>
+    </modules>
+    <global>
+        <page>
+            <layouts>
+                <home_template_with_bg>
+                    <label>Home page template</label>
+                    <template>page/home.phtml</template>
+                    <layout_handle>custom_layout</layout_handle>
+                </home_template_with_bg>
+                <category_template>
+                    <label>Category template</label>
+                    <template>page/category.phtml</template>
+                </category_template>
+            </layouts>
+        </page>
+    </global>
+</config>

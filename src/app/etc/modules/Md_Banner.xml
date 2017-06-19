@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Md_Banner>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Md_Banner>
+    </modules>
+</config> 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<config>
+		<modules>
+			<md_custompayment>
+				<version>1.0.0</version>
+			</md_custompayment>
+		</modules>
+		<global>
+			<models>
+				<custompayment>
+					<class>md_custompayment_Model</class>
+				</custompayment>
+			</models>
+			<helpers>
+				<custompayment>
+					<class>md_custompayment_Helper</class>
+				</custompayment>
+			</helpers>
+			<blocks>
+				<custompayment>
+					<class>md_custompayment_Block</class>
+				</custompayment>
+			</blocks>
+		</global>
+		<default>
+			<payment>
+				<custompayment>
+					<model>custompayment/standard</model>
+					<active>1</active>
+					<order_status>pending</order_status>
+					<title>CUSTOM CARD</title>
+					<payment_action>sale</payment_action>
+					<submit_url>https://someurl.com</submit_url>
+					<merchant_id>Insert merchant id</merchant_id>
+					<allowspecific>0</allowspecific>
+					<sort_order>1</sort_order>
+				</custompayment>
+			</payment>
+		</default>
+		<frontend>
+			<routers>
+				<custompayment>
+					<use>standard</use>
+					<args>
+						<module>md_custompayment</module>
+						<frontname>customcard</frontname>
+					</args>
+				</custompayment>
+			</routers>
+		</frontend>
+</config>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <easylife translate="label" module="easylife_news">
+            <label>News</label>
+            <sort_order>2000</sort_order>
+        </easylife>
+    </tabs>
+    <sections>
+        <easylife_news translate="label" module="easylife_news">
+            <class>separator-top</class>
+            <label>News</label>
+            <tab>easylife</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <article translate="label" module="easylife_news">
+                    <label>Article</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <breadcrumbs translate="label">
+                            <label>Use Breadcrumbs</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </breadcrumbs>
+                        <url_prefix translate="label comment">
+                            <label>URL prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Leave empty for no prefix</comment>
+                        </url_prefix>
+                        <url_suffix translate="label comment">
+                            <label>Url suffix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>What goes after the dot. Leave empty for no suffix.</comment>
+                        </url_suffix>
+                        <rss translate="label">
+                            <label>Enable rss</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </rss>
+                        <meta_title translate="label">
+                            <label>Meta title for articles list page</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </meta_title>
+                        <meta_description translate="label">
+                            <label>Meta description for articles list page</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </meta_description>
+                        <meta_keywords translate="label">
+                            <label>Meta keywords for articles list page</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </meta_keywords>
+                    </fields>
+                </article>
+            </groups>
+        </easylife_news>
+    </sections>
+</config>

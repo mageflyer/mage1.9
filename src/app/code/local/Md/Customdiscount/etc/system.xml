@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <customdiscount translate="label" module="customdiscount">
+            <label>HS Custom Cart Discount</label>
+            <sort_order>1000</sort_order>
+        </customdiscount>
+    </tabs>
+    <sections>
+        <customdiscount translate="label" module="customdiscount">
+            <label>Extension Options</label>
+            <tab>customdiscount</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+ 
+            <groups>
+                <customdiscount_group translate="label" module="customdiscount">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enable>
+                        <discount translate="label">
+                            <label>Discount Amount</label>
+                            <comment>Ex: 10</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <depends><enable>1</enable></depends>
+                        </discount>                        
+                    </fields>
+                </customdiscount_group>
+            </groups>
+        </customdiscount>
+    </sections>
+</config>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <easylife_news translate="title" module="easylife_news">
+                                        <title>News</title>
+                                    </easylife_news>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <cms>
+                        <children>
+                            <easylife_news translate="title" module="easylife_news">
+                                <title>News</title>
+                                    <children>
+                                        <article translate="title" module="easylife_news">
+                                            <title>Article</title>
+                                            <sort_order>0</sort_order>
+                                        </article>
+                                        <article_attributes translate="title" module="easylife_news">
+                                            <title>Manage Article attributes</title>
+                                            <sort_order>7</sort_order>
+                                        </article_attributes>
+                                    </children>
+                                </easylife_news>
+                            </children>
+                        </cms>
+
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <cms><!-- I added the admin menu under CMS. Feel free to move it. -->
+            <children>
+                <easylife_news translate="title" module="easylife_news">
+                    <title>News</title>
+                    <sort_order>17</sort_order>
+                    <children>
+                        <article translate="title" module="easylife_news">
+                            <title>Article</title>
+                            <action>adminhtml/news_article</action>
+                            <sort_order>0</sort_order>
+                        </article>
+                        <article_attributes translate="title" module="easylife_news">
+                            <title>Manage Article Attributes</title>
+                            <action>adminhtml/news_article_attribute</action>
+                            <sort_order>7</sort_order>
+                        </article_attributes>
+                    </children>
+                </easylife_news>
+            </children>
+        </cms>
+
+    </menu>
+</config>

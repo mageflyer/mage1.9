@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Md_CustomShipping>
+            <module>0.0.1</module>
+        </Md_CustomShipping>
+    </modules>
+    <global>
+        <models>
+            <md_customshipping>
+                <class>Md_Customshipping_Model</class>
+            </md_customshipping>
+        </models>
+    </global>
+    <!-- Default configuration -->
+    <default>
+        <carriers>
+            <md_customshipping>
+                <active>1</active>
+                <model>md_customshipping/carrier</model>
+                <title>Shipping Rate</title>
+                <sort_order>10</sort_order>
+                <sallowspecific>0</sallowspecific>
+            </md_customshipping>
+        </carriers>
+    </default>
+</config>
